@@ -9,9 +9,9 @@ high-level properties to create schemas for the I-Guide catalog records.
 
 |Property|Type (class)|Expected children Type (subclass) and DataType|Cardinality|Description| 
 |---|---|---|---|---|
-|url|Thing|URL|1|the url of the item|
 |name|Thing|Text|1|the name or title of the item| 
 |description|Thing|Text|1|the description or abstract of the item|
+|url|Thing|URL|1|the url of the item|
 |creator|Creative Work|Person OR Organization|1+| person or organization that created the work|
 |dateCreated | CreativeWork | Date \| DateTime | 1 | The date on which the work was created|
 |keywords | CreativeWork | DefinedTerm \| Text \| URL |	1+ | Keywords or tags used to describe the dataset, delimited by commas. |
