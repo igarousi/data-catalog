@@ -1,9 +1,9 @@
-# Core Metadata
+# Core Schema
 
-Core metadata is a set of common metadata fields that all catalog
-holdings share and consists largely of high-level dataset attributes
+Core schema contains a set of common metadata fields that all catalog
+records share and consists largely of high-level dataset attributes
 and properties. This document outlines the **required** and **recommended**
-high-level properties that are required.
+high-level properties to create schemas for the I-Guide catalog records.
 
 ## Required Metadata
 
