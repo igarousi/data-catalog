@@ -7,7 +7,7 @@ high-level properties to create schemas for the I-Guide catalog records.
 
 ## Required Metadata
 
-|Property|Class|Expected Type|Cardinality|Description| 
+|Property|Type (class)|Expected children Type (subclass) and DataType|Cardinality|Description| 
 |---|---|---|---|---|
 |url|Thing|URL|1|the url of the item|
 |name|Thing|Text|1|the name or title of the item| 
@@ -19,7 +19,7 @@ high-level properties to create schemas for the I-Guide catalog records.
 |provider | Creative Work | Organization \| Person | 1 | The service provider, service operator, or service performer |
 
 The following examples demonstrate how each of these required properties may
-be implemented in JSON+LD. Note, there are several properties omitted from each
+be implemented in `JSON+LD`. Note, there are several properties omitted from each
 example such as `@context` and `@type`. 
 
 ### Name, Description, and URL
