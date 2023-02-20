@@ -3,7 +3,7 @@
 Core schema contains a set of common metadata fields that all catalog
 records share and consists largely of high-level dataset attributes
 and properties. This document outlines the **required** and **recommended**
-high-level properties to create schemas for the I-Guide catalog records.
+high-level properties to create schemas for the I-Guide catalog records. Note that each of the required properties listed may have other required and recommended properties associated with them. 
 
 ## Required Metadata
 
@@ -40,10 +40,10 @@ contain. A simple example is shown below:
 
 **Creator** is a property of the `CreativeWork` class. The purpose of this
 property is to describe the author or authors of a catalog record. The
-recommended way to express authorship of a CreativeWork is shown below. Note,
+required and recommended way to express authorship of a CreativeWork is shown below. Note,
 this approach was adopted from ESIP Science on Schema Org.
 
-A single author can be expressed as:
+A single author can be expressed with the following required metadata.
 
 ``` json
   ...
@@ -54,8 +54,8 @@ A single author can be expressed as:
   }
 ```
 
-A more complete example of an author will include additional fields from the
-`Person` class such as an identifier.
+A more complete example of an author will include additional recommended fields from the
+`Person` class such as an `identifier`.
 
 ``` json
   ...
@@ -112,7 +112,7 @@ creators is preserved.
 ### Date Created
 
 **DateCreated** is a property of `CreativeWork` that can be expressed using
-either the `Date` or `DateTime` classes. The **dateCreated** represents the
+either the `Date` or `DateTime` data types. The **dateCreated** represents the
 date at which the dataset was initially generated. The `Date` class expects a
 value in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601). Whereas
 the `DateTime` class requires a combination of date and time of day. An
@@ -137,7 +137,7 @@ example if each is provided below.
 ### Keywords
 
 **Keywords** is a property of `CreativeWork` that can be expressed using either
-the `DefinedTerm`, `Text`, or `URL` Schema.org classes. Keywords are tags used
+the `DefinedTerm`, `Text`, or `URL` Schema.org Data Types. Keywords are tags used
 to describe the catalog record and are primarily used for resource discovery.
 **Keywords** are typically provided as a list of items, but can also done by
 repeating the **Keyword** property. Several examples are listed below.
@@ -209,7 +209,7 @@ the content of the catalog record, for example a software license.
 
 **Provider** is a property of the `CreativeWork` class that can be expressed as
 either an `Organization` or a `Person`. This represents the service operator,
-service performer, or goods producer. In many cases this is the operator of the
+service performer, or goods producer. In many cases, this is the operator of the
 repository in which the data resides.
 
 ``` json
