@@ -216,6 +216,15 @@ repository in which the data resides.
 {
   ...
   "provider": {
+    "@id": "https://hydroshare.org",
+  }
+}
+```
+
+``` json
+{
+  ...
+  "provider": {
     "@type": "Organization",
     "name": "HydroShare",
     "url": "https://hydroshare.org",
@@ -225,15 +234,6 @@ repository in which the data resides.
       "url": "www.cuahsi.org",
       "address": "1167 Massachusetts Ave Suites 418 & 419, Arlington, MA 02476"
     }
-  }
-}
-```
-
-``` json
-{
-  ...
-  "provider": {
-    "@id": "https://hydroshare.org",
   }
 }
 ```
